@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Omi — Child Safety Standards (CSAE)</title>
+  <meta name="description" content="Omi published standards against child sexual abuse and exploitation (CSAE), CSAM handling, visual moderation, and reporting to authorities." />
+  <link rel="canonical" href="https://hanter458.github.io/omi-legal/child-safety-policy.html" />
+  <style>
+    :root {
+      --primary: #F35324;
+      --primary-dark: #D4481F;
+      --primary-deep: #3D1208;
+      --primary-soft: #FDEAE5;
+      --mint: #FEF5F2;
+      --white: #FFFFFF;
+      --text: #111111;
+      --muted: #8A8F94;
+      --line: #EEEEEE;
+      --wash: #F4F5F6;
+      --ink: #1A1A1A;
+      --danger: #FF4D6A;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Inter, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--mint);
+      line-height: 1.65;
+      font-size: 16px;
+    }
+    a { color: var(--primary); }
+    .wrap { max-width: 820px; margin: 0 auto; padding: 28px 20px 80px; }
+    header {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 28px 24px;
+      margin-bottom: 22px;
+    }
+    .brand { font-weight: 800; letter-spacing: 8px; font-size: 28px; margin: 0 0 6px; }
+    .tag { margin: 0 0 18px; color: var(--muted); font-weight: 700; letter-spacing: 1px; }
+    h1 { font-size: 34px; letter-spacing: -0.8px; line-height: 1.15; margin: 0 0 10px; }
+    .meta { color: var(--muted); font-size: 14px; }
+    .langs { display: flex; gap: 8px; margin-top: 18px; }
+    .langs button {
+      border: 0; height: 36px; padding: 0 14px; border-radius: 999px;
+      font-weight: 800; cursor: pointer; background: var(--wash); color: var(--text);
+    }
+    .langs button[aria-pressed="true"] { background: var(--primary); color: var(--white); }
+    nav.toc {
+      background: var(--white);
+      border-radius: 24px;
+      padding: 18px 20px;
+      margin-bottom: 22px;
+      border: 1px solid var(--line);
+    }
+    nav.toc h2 { font-size: 15px; margin: 0 0 10px; }
+    nav.toc ol { margin: 0; padding-left: 18px; color: var(--muted); }
+    nav.toc a { color: var(--text); text-decoration: none; font-weight: 600; }
+    article {
+      background: var(--white);
+      border-radius: 28px;
+      padding: 8px 4px 28px;
+    }
+    section { padding: 18px 20px; border-bottom: 1px solid var(--line); }
+    section:last-child { border-bottom: 0; }
+    h2 { font-size: 22px; letter-spacing: -0.4px; margin: 0 0 10px; }
+    h3 { font-size: 16px; margin: 18px 0 8px; }
+    p, li { color: #2a2a2a; }
+    ul, ol { padding-left: 20px; }
+    .card {
+      background: var(--wash);
+      border-radius: 18px;
+      padding: 14px 16px;
+      margin: 12px 0;
+    }
+    .warn {
+      background: var(--primary-soft);
+      border-radius: 18px;
+      padding: 14px 16px;
+      color: var(--primary-deep);
+      font-weight: 600;
+    }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 12px 0; }
+    th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: 0.4px; }
+    footer { margin-top: 22px; color: var(--muted); font-size: 13px; }
+    footer a { color: var(--ink); font-weight: 700; }
+    .en { display: none; }
+    .tr { display: none; }
+    body[data-lang="en"] .en, body[data-lang="tr"] .tr { display: block; }
+    body[data-lang="en"] .en-inline, body[data-lang="tr"] .tr-inline { display: inline; }
+    .en-inline, .tr-inline { display: none; }
+  </style>
+</head>
+<body data-lang="en">
+  <div class="wrap">
+    <header>
+      <p class="brand">OMI</p>
+      <p class="tag">Video Chat</p>
+      <h1>
+        <span class="en">Child Safety Standards (CSAE)</span>
+        <span class="tr">Çocuk Güvenliği Standartları (CSAE)</span>
+      </h1>
+      <p class="meta">
+        <span class="en">App: Omi · Package: live.omega.app · Effective: 9 November 2026 · Last updated: 9 November 2026</span>
+        <span class="tr">Uygulama: Omi · Paket: live.omega.app · Yürürlük: 9 Kasım 2026 · Son güncelleme: 9 Kasım 2026</span>
+      </p>
+      <div class="langs" role="group" aria-label="Language">
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="tr" aria-pressed="false">TR</button>
+      </div>
+    </header>
+
+    <nav class="toc">
+      <h2 class="en">Contents</h2>
+      <h2 class="tr">İçindekiler</h2>
+      <ol class="en">
+        <li><a href="#scope">Scope and zero tolerance</a></li>
+        <li><a href="#age">Age restriction</a></li>
+        <li><a href="#prohibited">Prohibited CSAE / CSAM conduct</a></li>
+        <li><a href="#moderation">Visual moderation of photos</a></li>
+        <li><a href="#reporting">User reporting in the app</a></li>
+        <li><a href="#response">How we respond to CSAM</a></li>
+        <li><a href="#authorities">Reporting to authorities by country</a></li>
+        <li><a href="#data">Data shared with authorities</a></li>
+        <li><a href="#laws">Legal compliance</a></li>
+        <li><a href="#contact">Child safety point of contact</a></li>
+      </ol>
+      <ol class="tr">
+        <li><a href="#scope">Kapsam ve sıfır tolerans</a></li>
+        <li><a href="#age">Yaş sınırı</a></li>
+        <li><a href="#prohibited">Yasaklı CSAE / CSAM davranışları</a></li>
+        <li><a href="#moderation">Fotoğrafların görsel moderasyonu</a></li>
+        <li><a href="#reporting">Uygulama içi bildirim</a></li>
+        <li><a href="#response">CSAM’e nasıl yanıt veriyoruz</a></li>
+        <li><a href="#authorities">Ülkelere göre yetkili mercilere bildirim</a></li>
+        <li><a href="#data">Yetkililerle paylaşılan veriler</a></li>
+        <li><a href="#laws">Yasal uyum</a></li>
+        <li><a href="#contact">Çocuk güvenliği iletişim noktası</a></li>
+      </ol>
+    </nav>
+
+    <article>
+      <section id="scope">
+        <h2 class="en">1. Scope and zero tolerance</h2>
+        <h2 class="tr">1. Kapsam ve sıfır tolerans</h2>
+        <p class="en">
+          These are the publicly published Child Safety Standards for <strong>Omi</strong> (Android package
+          <code>live.omega.app</code>, iOS bundle <code>live.omega.app</code>), a live video chat application.
+          Omi has a <strong>zero-tolerance</strong> policy for child sexual abuse and exploitation
+          (<strong>CSAE</strong>) and child sexual abuse material (<strong>CSAM</strong>).
+        </p>
+        <p class="tr">
+          Bunlar, canlı video sohbet uygulaması <strong>Omi</strong> (Android paket
+          <code>live.omega.app</code>, iOS bundle <code>live.omega.app</code>) için kamuya açık
+          Çocuk Güvenliği Standartlarıdır. Omi, çocuk cinsel istismarı ve sömürüsü
+          (<strong>CSAE</strong>) ile çocuk cinsel istismarı içeriğine (<strong>CSAM</strong>) karşı
+          <strong>sıfır tolerans</strong> uygular.
+        </p>
+        <div class="warn">
+          <span class="en">Any attempt to upload, share, request, or distribute CSAM — or to use Omi to contact, groom, or exploit a child — results in immediate account action and, where appropriate, referral to competent authorities.</span>
+          <span class="tr">CSAM yükleme, paylaşma, talep etme veya dağıtma; ya da Omi’yi bir çocuğa ulaşmak, grooming veya sömürü için kullanma girişimleri hesabın derhal işleme alınmasına ve uygun hallerde yetkili mercilere bildirilmesine yol açar.</span>
+        </div>
+      </section>
+
+      <section id="age">
+        <h2 class="en">2. Age restriction</h2>
+        <h2 class="tr">2. Yaş sınırı</h2>
+        <p class="en">
+          Omi is intended only for adults <strong>18 years of age or older</strong>. We do not knowingly
+          allow children to create accounts, upload photos, or use live video. If we learn that a user
+          is under 18, we remove the account and related content.
+        </p>
+        <p class="tr">
+          Omi yalnızca <strong>18 yaş ve üzeri</strong> yetişkinler içindir. Çocukların hesap açmasına,
+          fotoğraf yüklemesine veya canlı video kullanmasına bilerek izin vermeyiz. Bir kullanıcının
+          18 yaşından küçük olduğunu öğrenirsek hesabı ve ilgili içeriği kaldırırız.
+        </p>
+      </section>
+
+      <section id="prohibited">
+        <h2 class="en">3. Prohibited CSAE / CSAM conduct</h2>
+        <h2 class="tr">3. Yasaklı CSAE / CSAM davranışları</h2>
+        <p class="en">Users must not:</p>
+        <p class="tr">Kullanıcılar şunları yapamaz:</p>
+        <ul class="en">
+          <li>Create, upload, store, display, request, or share CSAM or any sexualized depiction of a minor;</li>
+          <li>Upload photos or videos that depict a child in any sexual, exploitative, or abusive context;</li>
+          <li>Use Omi to groom, solicit, traffic, or otherwise exploit a child;</li>
+          <li>Impersonate a minor or claim to be under 18 to facilitate abuse;</li>
+          <li>Attempt to bypass age gates, moderation, reporting, or safety systems.</li>
+        </ul>
+        <ul class="tr">
+          <li>CSAM veya bir çocuğun cinsel / sömürü içeren herhangi bir tasvirini oluşturmak, yüklemek, saklamak, göstermek, talep etmek veya paylaşmak;</li>
+          <li>Bir çocuğu cinsel, sömürücü veya istismarcı bağlamda gösteren fotoğraf veya video yüklemek;</li>
+          <li>Omi’yi grooming, talep, insan ticareti veya başka türlü çocuk sömürüsü için kullanmak;</li>
+          <li>İstismarı kolaylaştırmak için çocuk gibi davranmak veya 18 yaşından küçük olduğunu iddia etmek;</li>
+          <li>Yaş kapılarını, moderasyonu, bildirimi veya güvenlik sistemlerini aşmaya çalışmak.</li>
+        </ul>
+      </section>
+
+      <section id="moderation">
+        <h2 class="en">4. Visual moderation of photos</h2>
+        <h2 class="tr">4. Fotoğrafların görsel moderasyonu</h2>
+        <p class="en">
+          When a user uploads a <strong>profile photo</strong> or other image in Omi, the content is
+          reviewed by our automated visual moderation systems (and, where needed, human review) before
+          or while it is made available. The review checks for prohibited material, including
+          indicators of child sexual abuse material and images that appear to depict a child.
+        </p>
+        <p class="tr">
+          Kullanıcı Omi’de <strong>profil fotoğrafı</strong> veya başka bir görsel yüklediğinde içerik,
+          otomatik görsel moderasyon sistemlerimiz (gerekirse insan incelemesi) tarafından, yayınlanmadan
+          önce veya yayın sırasında incelenir. İnceleme; çocuk cinsel istismarı içeriği göstergeleri ve
+          çocuk tasviri gibi yasaklı materyalleri kontrol eder.
+        </p>
+        <div class="card">
+          <p class="en" style="margin:0">
+            If moderation detects content that appears to involve a child or CSAM, Omi may automatically
+            block or remove the content, restrict or ban the account, and open an internal safety report
+            for escalation — including referral to law enforcement or child-protection hotlines as described below.
+          </p>
+          <p class="tr" style="margin:0">
+            Moderasyon çocuk veya CSAM ile ilgili görünen içerik tespit ederse Omi içeriği otomatik olarak
+            engelleyebilir veya kaldırabilir, hesabı kısıtlayabilir veya yasaklayabilir ve aşağıda anlatıldığı
+            şekilde kolluk veya çocuk koruma hatlarına bildirim dahil iç güvenlik raporunu başlatabilir.
+          </p>
+        </div>
+      </section>
+
+      <section id="reporting">
+        <h2 class="en">5. User reporting in the app</h2>
+        <h2 class="tr">5. Uygulama içi bildirim</h2>
+        <p class="en">
+          Users can report concerns from inside Omi (for example via in-app report / feedback flows and
+          account support). Reports related to child safety are prioritized. You may also contact the
+          child safety point of contact below.
+        </p>
+        <p class="tr">
+          Kullanıcılar Omi içinden (örneğin uygulama içi rapor / geri bildirim ve hesap desteği) endişelerini
+          bildirebilir. Çocuk güvenliğiyle ilgili bildirimler önceliklendirilir. Aşağıdaki çocuk güvenliği
+          iletişim noktasına da yazabilirsiniz.
+        </p>
+      </section>
+
+      <section id="response">
+        <h2 class="en">6. How we respond to CSAM</h2>
+        <h2 class="tr">6. CSAM’e nasıl yanıt veriyoruz</h2>
+        <p class="en">When we obtain actual knowledge of CSAM or credible child-endangerment activity on Omi, we:</p>
+        <p class="tr">Omi’de CSAM veya güvenilir çocuk tehlikesi faaliyetine dair somut bilgi edindiğimizde:</p>
+        <ol class="en">
+          <li>Remove or disable access to the content as quickly as practicable;</li>
+          <li>Suspend or permanently ban responsible accounts and related devices where appropriate;</li>
+          <li>Preserve relevant evidence for lawful reporting and investigations;</li>
+          <li>Report confirmed or strongly indicated CSAM to NCMEC and/or the relevant regional authority;</li>
+          <li>Cooperate with lawful requests from competent authorities.</li>
+        </ol>
+        <ol class="tr">
+          <li>İçeriğe erişimi mümkün olan en kısa sürede kaldırır veya engelleriz;</li>
+          <li>Sorumlu hesapları ve uygun hallerde ilişkili cihazları askıya alır veya kalıcı yasaklarız;</li>
+          <li>Yasal bildirim ve soruşturmalar için ilgili delilleri muhafaza ederiz;</li>
+          <li>Teyit edilen veya güçlü şekilde işaret edilen CSAM’i NCMEC ve/veya ilgili bölgesel mercie bildiririz;</li>
+          <li>Yetkili mercilerin hukuka uygun talepleriyle iş birliği yaparız.</li>
+        </ol>
+      </section>
+
+      <section id="authorities">
+        <h2 class="en">7. Reporting to authorities by country / region</h2>
+        <h2 class="tr">7. Ülke / bölgeye göre yetkili mercilere bildirim</h2>
+        <p class="en">
+          Depending on where the activity appears to occur and applicable law, Omi may report to one or more
+          of the following bodies (and other competent local law-enforcement or child-protection agencies):
+        </p>
+        <p class="tr">
+          Faaliyetin göründüğü yer ve yürürlükteki hukuka göre Omi aşağıdaki mercilerden birine veya birkaçına
+          (ve diğer yetkili yerel kolluk veya çocuk koruma kurumlarına) bildirim yapabilir:
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th><span class="en-inline">Country / region</span><span class="tr-inline">Ülke / bölge</span></th>
+              <th><span class="en-inline">Authority / hotline</span><span class="tr-inline">Yetkili / ihbar hattı</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>United States</td>
+              <td>NCMEC CyberTipline (National Center for Missing &amp; Exploited Children)</td>
+            </tr>
+            <tr>
+              <td>Canada</td>
+              <td>Cybertip.ca — Canadian Centre for Child Protection</td>
+            </tr>
+            <tr>
+              <td>United Kingdom</td>
+              <td>NCA / CEOP (Child Exploitation and Online Protection)</td>
+            </tr>
+            <tr>
+              <td>European Union</td>
+              <td>National law enforcement + INHOPE member hotlines in the relevant Member State</td>
+            </tr>
+            <tr>
+              <td>Germany</td>
+              <td>BKA (Bundeskriminalamt) and designated CSAM reporting channels</td>
+            </tr>
+            <tr>
+              <td>Türkiye</td>
+              <td>
+                Emniyet Genel Müdürlüğü Siber Suçlarla Mücadele Daire Başkanlığı;
+                Aile ve Sosyal Hizmetler Bakanlığı / ALO 183;
+                yetkili Cumhuriyet savcılıkları
+              </td>
+            </tr>
+            <tr>
+              <td>Australia</td>
+              <td>eSafety Commissioner and Australian Federal Police as applicable</td>
+            </tr>
+            <tr>
+              <td><span class="en-inline">Other countries</span><span class="tr-inline">Diğer ülkeler</span></td>
+              <td>
+                <span class="en-inline">Competent national police cybercrime / child-protection units and INHOPE-affiliated hotlines where available</span>
+                <span class="tr-inline">Yetkili ulusal polis siber suç / çocuk koruma birimleri ve mevcutsa INHOPE bağlı ihbar hatları</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="data">
+        <h2 class="en">8. Data shared with authorities</h2>
+        <h2 class="tr">8. Yetkililerle paylaşılan veriler</h2>
+        <p class="en">
+          If we determine that content or activity on Omi appears to involve a child, CSAM, or other
+          child-endangerment offenses, we may disclose to competent authorities information reasonably
+          necessary for investigation and child protection, which may include:
+        </p>
+        <p class="tr">
+          Omi’deki içerik veya faaliyetin çocuk, CSAM veya diğer çocuk tehlikesi suçlarıyla ilgili olduğu
+          sonucuna varırsak, soruşturma ve çocuk koruması için makul ölçüde gerekli bilgileri yetkili
+          mercilerle paylaşabiliriz. Bunlar şunları içerebilir:
+        </p>
+        <ul class="en">
+          <li>IP address and approximate network / location metadata associated with the account or upload;</li>
+          <li>Device identifiers (for example hardware ID / advertising-independent device identifiers we store for safety);</li>
+          <li>Username / display name and account identifiers;</li>
+          <li>Name and other profile details provided by the user;</li>
+          <li>Email address and sign-in provider information (Apple / Google);</li>
+          <li>Timestamps, report IDs, moderation decisions, and copies or hashes of the reported media;</li>
+          <li>Other account activity logs needed to establish identity, timing, and distribution of the material.</li>
+        </ul>
+        <ul class="tr">
+          <li>Hesap veya yüklemeyle ilişkili IP adresi ve yaklaşık ağ / konum meta verileri;</li>
+          <li>Cihaz kimlikleri (örneğin güvenlik için sakladığımız donanım kimliği / reklamdan bağımsız cihaz kimlikleri);</li>
+          <li>Kullanıcı adı / görünen ad ve hesap tanımlayıcıları;</li>
+          <li>Kullanıcının verdiği ad soyad ve diğer profil bilgileri;</li>
+          <li>E-posta adresi ve giriş sağlayıcı bilgileri (Apple / Google);</li>
+          <li>Zaman damgaları, rapor kimlikleri, moderasyon kararları ve bildirilen medyanın kopyaları veya hash’leri;</li>
+          <li>Kimlik, zamanlama ve materyalin dağıtımını ortaya koymak için gereken diğer hesap etkinlik kayıtları.</li>
+        </ul>
+        <p class="en">
+          We share this information only for child-safety and legal-compliance purposes, and in accordance
+          with applicable law and our Privacy Policy.
+        </p>
+        <p class="tr">
+          Bu bilgileri yalnızca çocuk güvenliği ve yasal uyum amaçlarıyla, yürürlükteki hukuka ve
+          Gizlilik Politikamıza uygun olarak paylaşırız.
+        </p>
+      </section>
+
+      <section id="laws">
+        <h2 class="en">9. Legal compliance</h2>
+        <h2 class="tr">9. Yasal uyum</h2>
+        <p class="en">
+          Omi complies with applicable child-safety laws and regulations, including processes to report
+          confirmed CSAM to NCMEC or the relevant regional authority, and to remove CSAM after obtaining
+          actual knowledge of it. These standards are provided to meet Google Play’s Child Safety Standards
+          policy requirements for published CSAE standards.
+        </p>
+        <p class="tr">
+          Omi, teyit edilen CSAM’i NCMEC veya ilgili bölgesel mercie bildirme ve CSAM hakkında somut bilgi
+          edindikten sonra kaldırma süreçleri dahil olmak üzere yürürlükteki çocuk güvenliği yasalarına uyar.
+          Bu standartlar, Google Play Çocuk Güvenliği Standartları politikasının kamuya açık CSAE standardı
+          gereksinimlerini karşılamak için sunulmuştur.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2 class="en">10. Child safety point of contact</h2>
+        <h2 class="tr">10. Çocuk güvenliği iletişim noktası</h2>
+        <p class="en">
+          Designated contact for CSAE / CSAM notices (including notices from Google Play) and enforcement questions:
+        </p>
+        <p class="tr">
+          CSAE / CSAM bildirimleri (Google Play bildirimleri dahil) ve uygulama soruları için yetkili iletişim:
+        </p>
+        <div class="card">
+          <p style="margin:0">
+            <strong>Omi — Child Safety</strong><br />
+            Email: <a href="mailto:onurkaplan35@gmail.com">onurkaplan35@gmail.com</a><br />
+            <span class="en">Subject line suggestion: “Omi Child Safety / CSAE”</span>
+            <span class="tr">Konu satırı önerisi: “Omi Çocuk Güvenliği / CSAE”</span>
+          </p>
+        </div>
+        <p class="en">
+          Related documents:
+          <a href="./privacy.html">Privacy Policy</a> ·
+          <a href="./terms.html">Terms of Service</a> ·
+          <a href="./help.html">Help</a>
+        </p>
+        <p class="tr">
+          İlgili belgeler:
+          <a href="./privacy.html">Gizlilik Politikası</a> ·
+          <a href="./terms.html">Kullanım Koşulları</a> ·
+          <a href="./help.html">Yardım</a>
+        </p>
+      </section>
+    </article>
+
+    <footer>
+      <span class="en">© Omi. Published child safety standards against CSAE / CSAM.</span>
+      <span class="tr">© Omi. CSAE / CSAM’e karşı yayımlanmış çocuk güvenliği standartları.</span>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      var buttons = document.querySelectorAll('.langs button');
+      function setLang(lang) {
+        document.body.setAttribute('data-lang', lang);
+        buttons.forEach(function (btn) {
+          btn.setAttribute('aria-pressed', btn.getAttribute('data-lang') === lang ? 'true' : 'false');
+        });
+        try { localStorage.setItem('omi-legal-lang', lang); } catch (e) {}
+      }
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () { setLang(btn.getAttribute('data-lang')); });
+      });
+      var saved = null;
+      try { saved = localStorage.getItem('omi-legal-lang'); } catch (e) {}
+      setLang(saved === 'tr' ? 'tr' : 'en');
+    })();
+  </script>
+</body>
+</html>
